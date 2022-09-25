@@ -1,0 +1,116 @@
+.movie-card {
+  width: 100%;
+  background-color: #141A29;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s linear;
+  position: relative;
+
+}
+.movie-card:hover{
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.4);
+  transform: scale(1.05);
+}
+.movie-card .favoriteBtn{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+  background-color: #F2F3F6;
+  transition: 0.2s all linear;
+  border: none;
+}
+
+.movie-card .favoriteBtn:hover{
+  background-color:#FEE5EC ;
+  transition: 0.2s all linear;
+}
+.movie-card .favoriteBtn svg{
+  transition: 0.2s all linear;
+}
+.movie-card .favoriteBtn:hover svg{
+  fill:rgba(218, 75, 79, 1) ;
+  transition: 0.2s all linear;
+}
+
+.movie-card .thumbMovie{
+    width:100%;
+    overflow: hidden;
+}
+.movie-card .thumbMovie img {
+  max-width: 75%;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+.movie-card .thumbMovie img,
+.movie-card .contentMovie p,
+.movie-card .contentMovie h2 {
+  margin-bottom: 1rem;
+}
+
+.movie-card .contentMovie {
+    padding: 0 1rem 2rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.movie-card .contentMovie .average svg {
+  color: #f7d354;
+}
+
+.movie-card .contentMovie a {
+  background-color: #f7d354;
+  border: 2px solid #f7d354;
+  display: block;
+  border-radius: 4px;
+  color: #000;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  font-weight: bold;
+}
+.movie-card .contentMovie button{
+    background-color: #04DD75;
+    border: 2px solid #04DD75;
+    display: block;
+    border-radius: 4px;
+    color: #000;
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.movie-card .contentMovie button:hover{
+    background-color: transparent;
+  color: #04DD75;
+}
+
+.movie-card .contentMovie a:hover {
+  background-color: transparent;
+  color: #f7d354;
+}
+
+@media(min-width:768px){
+  .movie-card {
+    width: 45%;  
+  }
+}
+@media(min-width:1024px){
+  .movie-card {
+    width: 30%;  
+  }
+}

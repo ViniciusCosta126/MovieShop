@@ -1,0 +1,13 @@
+.favoritos{
+    margin-top: 12rem;
+}
+
+.favoritos .title{
+    color: #000;
+    font-size: 2.5rem;
+}
+@media(min-width:1024px){
+    .favoritos{
+        margin-top: 8rem;
+    }
+}

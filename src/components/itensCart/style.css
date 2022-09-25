@@ -1,0 +1,17 @@
+.itemContainer{
+    display: flex;
+    padding: 8px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #dcdcdc;
+    margin: 8px 12px;
+    border-radius: 6px;
+}
+.itemContainer .title{
+    width: 110px;
+}
+.itemContainer button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}

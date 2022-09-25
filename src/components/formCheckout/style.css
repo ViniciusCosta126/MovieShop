@@ -1,0 +1,131 @@
+.form{
+    margin-top: 1rem;
+}
+
+.form .input-group {
+  position: relative;
+  margin-bottom: 1rem;
+ 
+}
+.form .input-group.inline{
+    display: inline-block;
+   width: 100%;
+   
+}
+
+.form .input {
+  padding: 10px; 
+  border-radius: 2px;
+  background-color: #141a29;
+  border: 2px solid #fff;
+  width: 100%;
+  outline: none;
+  color: #fff;
+}
+
+.form .placeholder {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  font-size: 14px;
+  padding: 0px 5px;
+  color: #fff;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.form .input:focus + .placeholder,
+.form .input:not(:placeholder-shown) + .placeholder {
+  top: -10px;
+  background-color: #141a29;
+}
+.form button{
+ 
+    width: 100%;
+    background-color: #04dd75;
+    border: 2px solid #04dd75;
+    display: block;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    color: #000;
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+    font-weight: bold;
+}
+.form button:hover{
+  background-color: transparent;
+  color: #04dd75;
+  transform: scale(1.05);
+}
+@media(min-width:1024px){
+  .form .input-group.inline{
+    width: 46%;
+    margin-right: 22px;
+  }
+}
+.totalItens{
+  margin-top: 1rem;
+}
+
+#modal-overlay {
+  position: absolute;
+  top: 250px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+#modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 10;
+  padding: 4rem;
+  color: #000;
+  border-radius: 5px;
+  width: 70%;
+}
+
+button.close-modal {
+  position: absolute;
+  top: 6%;
+  right: 2%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+#modal-content > p {
+  line-height: 2.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #modal-content {
+    width: 100%;
+    height: 100%;
+  }
+
+  button.close-modal {
+    top: 2rem;
+    right: 2rem;
+  }
+}
+
+@media(min-width:1024px){
+  #modal-overlay{
+    top: 0;
+  }
+}

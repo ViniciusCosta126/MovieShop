@@ -1,0 +1,137 @@
+#navbar {
+  padding: 1rem 2rem;
+  background-color: #141a29;
+  position: fixed;
+  border-bottom: 1px solid #dcdcdc;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+
+#navbar h2 a {
+  display: flex;
+  align-items: center;
+  color: #ffb800;
+  gap: 0.5rem;
+  justify-content: center;
+
+}
+#navbar form {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  margin: 1rem 0;
+}
+#navbar input {
+  padding: 0.2rem 0.8rem;
+  border-radius: 4px;
+  border: none;
+  width: 100%;
+}
+#navbar form button {
+  background-color: #ffb800;
+  border: 2px solid #ffb800;
+  border-radius: 4px;
+  color: #000;
+  padding: 0.3rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#navbar form button:hover {
+  background-color: transparent;
+  color: #ffb800;
+}
+#navbar .actionsNav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#navbar .actionsNav > button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 10px;
+  position: relative;
+}
+#navbar .actionsNav > button > span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffb800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -6px;
+}
+
+#navbar .actionsNav > button svg {
+  color: #ffb800;
+}
+
+#navbar .cartItens {
+  position: absolute;
+  height: 100vh;
+  width: 320px;
+  background-color: #141a29;
+  top: 50px;
+  overflow-y: scroll;
+}
+#navbar .cartTitle {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  width: 100%;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+}
+#navbar .cartItens.closed {
+  right: -1000px;
+  transition: all 0.3s linear;
+}
+#navbar .cartItens.open {
+  right: -32px;
+  transition: all 0.3s linear;
+}
+#navbar .total {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+#navbar .btn-call-to-action {
+  width: 80%;
+  margin: 1.5rem auto 400px;
+  background-color: #04dd75;
+  border: 2px solid #04dd75;
+  display: block;
+  border-radius: 4px;
+  color: #000;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  font-weight: bold;
+}
+#navbar .btn-call-to-action:hover {
+  background-color: transparent;
+  color: #04dd75;
+}
+
+@media(min-width:1024px){
+  #navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #navbar h2 a{
+    justify-content: initial;
+  }
+  #navbar form{
+    width: 20%;
+  }
+}

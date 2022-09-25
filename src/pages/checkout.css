@@ -1,0 +1,33 @@
+.containerCheckout {
+  margin-top: 12rem;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+.containerCheckout .formContainer{
+    border: 1px solid black;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #141a29;
+    border-radius: 6px;
+    height: 580px;
+    color: #fff;
+}
+.containerCheckout .itensCheckout{
+  width: 100%;
+}
+
+@media(min-width:1024px){
+  .containerCheckout {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .containerCheckout .formContainer{
+    width: 45%;
+  }
+  .containerCheckout .itensCheckout{
+    width: 48%;
+    border: 1px solid black;
+    padding: 10px;
+  }
+}
